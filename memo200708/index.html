@@ -154,307 +154,386 @@ mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 
 
-/* 全局属性 */
+﻿
+/*!
+Misty Light
+Brought to you with ❤️ by E-Tiger Studio, 2017-2019
+https://github.com/etigerstudio/typora-misty-theme
+ */
+:root {
+  --control-text-color: #777;
+  --side-bar-bg-color: #f6f8fa
+}
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: subpixel-antialiased
+}
+body {
+  font-family: "PingFang SC",-apple-system,-apple-system-body,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","微软雅黑",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: #24292e;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: unset
+}
 #write {
   max-width: 860px;
-  font-size: 16px;
-  color: black;
-  padding: 0 10px;
-  line-height: 1.6;
-  word-spacing: 0px;
-  letter-spacing: 0px;
-  word-break: break-word;
-  word-wrap: break-word;
-  text-align: left;
-  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-/*段落*/
-#write p {
-  font-size: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin: 0;
-  line-height: 26px;
-  color: black;
-}
-
-
-/*标题*/
-#write h1,
-#write h2,
-#write h3,
-#write h4,
-#write h5,
-#write h6 {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  padding: 0px;
-  font-weight: bold;
-  color: black;
-}
-#write h1 {
-  font-size: 1.5rem;
-}
-#write h2 {
-  font-size: 1.3rem;
-  border-bottom: 2px solid rgb(239, 112, 96);
-}
-#write h2 span {
- display: inline-block;
- font-weight: bold;
- background: rgb(239, 112, 96);
- color: #ffffff;
- padding: 3px 10px 1px;
- border-top-right-radius: 3px;
- border-top-left-radius: 3px;
- margin-right: 3px;
-}
-#write h2:after {
- display: inline-block;
- content: "";
- vertical-align: bottom;
- border-bottom: 36px solid #efebe9;
- border-right: 20px solid transparent;
-}
-#write h3 {
-  font-size: 1.2rem;
-}
-#write h4 {
-  font-size: 1.1rem;
-}
-#write h5 {
-  font-size: 1rem;
-}
-#write h6 {
-  font-size: 1rem;
-}
-
-/*列表*/
-#write ul,
-#write ol {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  padding-left: 25px;
-  color: black;
-}
-#write ul {
-  list-style-type: disc;
-}
-#write ul ul {
-  list-style-type: square;
-}
-#write ol {
-  list-style-type: decimal;
-}
-#write li section {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  line-height: 26px;
-  text-align: left;
-  color: rgb(1,1,1); /* 只要是纯黑色微信编辑器就会把color这个属性吞掉。。。*/
-  font-weight: 500;
-}
-
-/*引用*/
-#write blockquote {
-  display: block;
-  font-size: 0.9em;
-  overflow: auto;
-  overflow-scrolling: touch;
-  border-left: 3px solid rgb(239, 112, 96);
-  color: #6a737d;
-  padding: 10px 10px 10px 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  background: #fff9f9;
-}
-#write blockquote p {
-  margin: 0px;
-  color: black;
-  line-height: 26px;
-}
-
-/*链接*/
-#write a {
-  text-decoration: none;
-  word-wrap: break-word;
-  font-weight: bold;
-  border-bottom: 1px solid #1e6bb8;
-  color: rgb(239, 112, 96);
-  border-bottom: 1px solid rgb(239, 112, 96);
-}
-
-/*行内代码*/
-#write p code,
-#write li code {
-  font-size: 14px;
-  word-wrap: break-word;
-  padding: 2px 4px;
-  border-radius: 4px;
-  margin: 0 2px;
-  color:  rgb(239, 112, 96);;
-  background-color: rgba(27,31,35,.05);
-  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
-  word-break: break-all;
-}
-
-/*图片*/
-#write img {
-  display: block;
   margin: 0 auto;
-  max-width: 100%;
+  padding: 20px 30px 100px
 }
-
-/*表格*/
-#write table {
-  display: table;
-  text-align: left;
+#write > ol:first-child,
+#write > ul:first-child {
+  margin-top: 30px
 }
-#write tbody {
-  border: 0;
+body > :first-child {
+  margin-top: 0!important
 }
-#write table tr {
-  border: 0;
-  border-top: 1px solid #ccc;
-  background-color: white;
+body > :last-child {
+  margin-bottom: 0!important
 }
-#write table tr:nth-child(2n) {
-  background-color: #F8F8F8;
+a {
+  color: #4183c4
 }
-#write table tr th,
-#write table tr td {
-  font-size: 16px;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
-  text-align: left;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  cursor: text;
+  color: #142331
 }
-#write table tr th {
-  font-weight: bold;
-  background-color: #f0f0f0;
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+  text-decoration: none
 }
-
-/* 行内代码 */
-#write span code, #write li code {
- color: rgb(239, 112, 96);
+h1 code,
+h1 tt,
+h2 code,
+h2 tt,
+h3 code,
+h3 tt,
+h4 code,
+h4 tt,
+h5 code,
+h5 tt,
+h6 code,
+h6 tt {
+  font-size: inherit
 }
-
-/* 脚注上标 */
-#write .md-footnote {
- font-weight: bold;
- color: rgb(239, 112, 96);
+h1 {
+  text-align: center;
+  padding-bottom: .3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  margin: 1em auto 1.2em
 }
-#write .md-footnote > .md-text:before {
- content: '['
-}
-#write .md-footnote > .md-text:after {
- content: ']'
-}
-
-/* 脚注 */
-#write .md-def-name {
-  padding-right: 1.8ch;
-}
-#write .md-def-name:before {
-  content: '[';
-  color: #000;
-}
-#write .md-def-name:after {
-  color: #000;
-}
-
-/* 代码块主题 */
-.md-fences:before {
-  content: ' ';
+h1:after {
+  border-bottom: 2px dashed #afec9e;
+  content: '';
+  width: 100px;
   display: block;
-  width: 100%;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-color: #282c34;
-  margin-bottom: -7px;
-  border-radius: 5px;
-  background-position: 10px 10px;
+  margin: .2em auto 0;
+  height: 2px
 }
-.cm-s-inner.CodeMirror {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  background-color: #292d3e;
-  color: #a6accd;
-  font-family: Consolas;
-  border-radius: 4px;
+h2 {
+  font-size: 1.75em;
+  padding-left: 9px;
+  line-height: 1.4;
+  border-left: 6px solid #cce5ff
 }
-.CodeMirror-lines {
-  padding-left: 4px;
+h3 {
+  font-size: 1.5em;
+  line-height: 1.43
 }
-.cm-s-inner .cm-keyword {
-  color: #c792ea;
+h3:before {
+  border-radius: 50%;
+  background-color: #9ed0ff;
+  content: '';
+  width: 6px;
+  display: inline-block;
+  height: 6px;
+  vertical-align: middle;
+  margin-bottom: .18em;
+  margin-right: 8px
 }
-.cm-s-inner .cm-operator {
-  color: #89ddff;
+#write > h3.md-focus:before,
+#write > h4.md-focus:before {
+  background-color: transparent;
+  width: auto;
+  height: auto
 }
-.cm-s-inner .cm-variable-2 {
-  color: #eeffff;
+h4 {
+  font-size: 1.25em
 }
-.cm-s-inner .cm-variable-3,
-.cm-s-inner .cm-type {
-  color: #f07178;
+h4:before {
+  background-color: #9ed0ff;
+  content: '';
+  width: 6px;
+  display: inline-block;
+  height: 2px;
+  vertical-align: middle;
+  margin-bottom: .18em;
+  margin-right: 8px
 }
-.cm-s-inner .cm-builtin {
-  color: #ffcb6b;
+h5 {
+  font-size: 1em
 }
-.cm-s-inner .cm-atom {
-  color: #f78c6c;
+h6 {
+  font-size: 1em;
+  color: #777
 }
-.cm-s-inner .cm-number {
-  color: #ff5370;
+blockquote,
+dl,
+ol,
+p,
+table,
+ul {
+  margin: .8em 0
 }
-.cm-s-inner .cm-def {
-  color: #82aaff;
+li > ol,
+li > ul {
+  margin: 0
 }
-.cm-s-inner .cm-string {
-  color: #c3e88d;
+hr {
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0
 }
-.cm-s-inner .cm-string-2 {
-  color: #f07178;
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6,
+body>h1:first-child,
+body>h1:first-child+h2,
+body>h2:first-child,
+body>h3:first-child,
+body>h4:first-child,
+body>h5:first-child,
+body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0
 }
-.cm-s-inner .cm-comment {
-  color: #676e95;
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+  margin-top: 0
 }
-.cm-s-inner .cm-variable {
-  color: #f07178;
+li p.first {
+  display: inline-block
 }
-.cm-s-inner .cm-tag {
-  color: #ff5370;
+ol,
+ul {
+  padding-left: 30px
 }
-.cm-s-inner .cm-meta {
-  color: #ffcb6b;
+ol:first-child,
+ul:first-child {
+  margin-top: 0
 }
-.cm-s-inner .cm-attribute {
-  color: #c792ea;
+ol:last-child,
+ul:last-child {
+  margin-bottom: 0
 }
-.cm-s-inner .cm-property {
-  color: #c792ea;
+blockquote {
+  border-left: 4px dotted #e5e8e8;
+  padding: 0 12px;
+  color: #444;
+  font-size: .9em
 }
-.cm-s-inner .cm-qualifier {
-  color: #decb6b;
+blockquote blockquote {
+  padding-right: 0
 }
-.cm-s-inner .cm-variable-3,
-.cm-s-inner .cm-type {
-  color: #decb6b;
+table {
+  padding: 0;
+  word-break: initial
 }
-.cm-s-inner .cm-error {
-  color: rgba(255, 255, 255, 1);
-  background-color: #ff5370;
+table tr {
+  border-top: 1px solid #dadfe6;
+  margin: 0;
+  padding: 0
 }
-.cm-s-inner .CodeMirror-matchingbracket {
-  text-decoration: underline;
-  color: white !important;
+table.md-table tr:nth-child(2n) {
+  background-color: #fafbfc
 }
-.CodeMirror div.CodeMirror-cursor {
-  border-left: 1px solid rgb(239, 112, 96);
-  z-index: 3;
+table tr td,
+table tr th {
+  border: 1px solid #dadfe6;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px
 }
-
+table tr td:first-child,
+table tr th:first-child {
+  margin-top: 0
+}
+table tr td:last-child,
+table tr th:last-child {
+  margin-bottom: 0
+}
+.CodeMirror-gutters {
+  border-right: 1px solid #ddd
+}
+.md-fences,
+code,
+tt {
+  font-size: 90%;
+  border-radius: 3px;
+  font-family: "SF Mono",Consolas,"Liberation Mono",Menlo,Courier,monospace,"PingFang SC","Microsoft YaHei","微软雅黑"
+}
+code,
+tt {
+  margin: 0 2px;
+  padding: 2px 4px;
+  background-color: #e2f0ff
+}
+.md-fences {
+  background-color: #f6f8fa;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 12px 1em
+}
+.md-task-list-item > input {
+  margin-left: -1.45em;
+  margin-top: calc(1em - 10px)
+}
+@media print {
+  body {
+    font-size: 11px;
+    font-weight: 400
+  }
+  pre,
+  table {
+    page-break-inside: avoid
+  }
+  pre {
+    word-wrap: break-word
+  }
+}
+#write pre.md-meta-block {
+  padding: 1rem;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7faf6;
+  border: 0;
+  border-radius: 3px;
+  color: #777;
+  margin-top: 0!important
+}
+.mathjax-block > .code-tooltip {
+  bottom: .375rem
+}
+#write > h3.md-focus:before {
+  left: -1.5625rem;
+  top: .375rem
+}
+#write>h4.md-focus:before,
+#write>h5.md-focus:before,
+#write>h6.md-focus:before {
+  left: -1.5625rem;
+  top: .285714286rem
+}
+.md-image > .md-meta {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-family: "SF Mono",Consolas,"PingFang SC","Liberation Mono",Courier,monospace,"Microsoft YaHei","微软雅黑";
+  padding: 2px 4px 0;
+  font-size: .9em;
+  color: inherit
+}
+.md-tag {
+  color: inherit
+}
+.md-toc {
+  margin-top: 20px;
+  padding-bottom: 20px
+}
+.sidebar-tabs {
+  border-bottom: none
+}
+#typora-quick-open {
+  border: 1px solid #ddd;
+  background-color: #f8f8f8
+}
+#typora-quick-open-item {
+  background-color: #fafafa;
+  border-color: #fefefe #e5e5e5 #e5e5e5 #eee;
+  border-style: solid;
+  border-width: 1px
+}
+.typora-quick-open-item {
+  padding-top: 3px
+}
+.typora-quick-open-list {
+  margin-top: 4px
+}
+.typora-quick-open-item-path {
+  margin-top: -2px
+}
+#md-notification:before {
+  top: 10px
+}
+.on-focus-mode blockquote {
+  border-left-color: rgba(85,85,85,.12)
+}
+.context-menu,
+.megamenu-content,
+footer,
+header {
+  font-family: "SF UI Text","PingFang SC",-apple-system,-apple-system-body,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","微软雅黑",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+}
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+  visibility: visible
+}
+.mac-seamless-mode #typora-sidebar {
+  background-color: var(--side-bar-bg-color)
+}
+.md-lang {
+  color: #b4654d
+}
+.pin-outline #outline-content .outline-active strong,
+.pin-outline .outline-active {
+  color: #232323;
+  font-weight: 600
+}
+.outline-label {
+  color: #646464;
+  font-weight: 400
+}
+.file-list-item-summary {
+  font-family: "SF UI Text","PingFang SC",-apple-system,-apple-system-body,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","微软雅黑",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+}
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 600
+}
+h1,
+table tr th {
+  font-weight: 400
+}
+.file-list-item-file-name {
+  font-weight: 500
+}
 
 
 </style>
@@ -463,7 +542,7 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 <div  id='write'  class = 'is-node'><h1><a name="声优・齐藤壮马畅谈自己的歌曲新系列in-bloom以及系列第一弹petrichor" class="md-header-anchor"></a><span>声优・齐藤壮马畅谈自己的歌曲新系列『in bloom』，以及系列第一弹「Petrichor」。</span></h1><p><span>Source：</span><a href='https://harajuku-pop.com/21129' target='_blank' class='url'>https://harajuku-pop.com/21129</a></p><hr /><p><img src="https://github.com/memo422/memo/raw/master/memo200708/image/001.jpg" referrerpolicy="no-referrer" alt="img"></p><p><span>「催眠麦克风-Division Rap Battle-」的梦野幻太郎，「活击刀剑乱舞」的鹤丸国永，「机动战士高达：铁血的奥尔芬斯」的亚马基･基鲁曼顿，「未来卡搭档对战」的龙炎寺翼空，「恐怖残响」的Twelve/久见冬二，「排球少年!!」的山口忠，「斩！赤红之瞳」的塔兹米等等，他是齐藤壮马，一位为许多作品献声添彩的个性派声优。</span>
 <span>他在音乐方面也颇有造诣，于2017年6月经由SACRA MUSIC出道为歌手。出道单曲碟「Fish Story」在Oricon周榜首次登场获得第9名的成绩。第二张单曲碟「夜未明／断光雨」中收录的「断光雨」则是他自身也有出演的动画「活击刀剑乱舞」的OP，在Oricon周榜首次登场获得第7名的成绩。首张专辑大碟「quantum stranger」则同样在Oricon的周榜荣获最高第4名的成绩，他一直在稳步收获着大家的支持。</span>
 <span>无论是作为声优，还是作为创作型歌手，齐藤壮马一直都在不断进步，以6月27日配信的「Petrichor」打头阵，他的新系列『in bloom』正式启动，这次新系列的主题是”季节的更迭””末日世界的未来”。</span>
-<span>他对这次的新系列究竟有着怎样的想法，以及系列第一弹的「Petrichor」里究竟蕴含着怎样的感情，我们以邮件访谈的形式请他进行了作答。</span></p><h2><a name="对文字的视觉效果也很在意" class="md-header-anchor"></a><span>对文字的视觉效果也很在意</span></h2><p><strong><span>──你的歌手活动也如翻页一样，以『in bloom』系列正式迈入了第二章。但是我很在意你想划分「第一章」「第二章」的理由。是为了明确表现的对象，才会特意进行区分的吗？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：其实并没有那么夸张。接到唱片公司的邀请已经过去两年多了，专辑也出了，演唱会也搞了，所以感觉差不多已经走完了一套流程了。回首过去，从大石昌良先生为我写下最好的『Fish Story』，到专辑『quantum stranger』制作完成，它们已经完美地衔接在了一起。歌的主题，也就是唱的内容，大部分也都是「旅程」啊「世界的终焉」啊类似这种方向性的。只是，过去我一直认为，既然是作为声优开展歌手活动，那么最重要的还是应该提供流行性的娱乐，但是渐渐地，我开始有了野心，还想尝试一些更加黑暗，更加难以理解的音乐，所以，这个第二章其实就是“我接下来要做形形色色各种各样的音乐啦，还请多多支持”的意思。结果现在感觉有点小题大做了，怪不好意思的……（笑）。</span></p><p><strong><span>──我也很在意你这次的新系列为什么会采用『in bloom』(盛开)这个词，请说一下理由吧。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我自己是觉得没必要特意单独起一个系列名的，但是制作人说还是起一个比较好，因为这样可以让人知道这些歌曲之间是有联系的（笑）。本来按照计划，我是准备在6月推出新单曲碟的。由于种种原因，才改成了配信的形式。而我在整理已经写好的歌时，发现有很多都是带有季节感的。『in bloom』我本来是打算拿来当歌名用的，但是感觉它跟整个系列都很契合，就直接决定用作系列名了。我其实是对文字的视觉效果也很在意的类型，而『in bloom』无论是发音还是视觉效果都很好。所以，并不是因为一开始就构筑了完整的概念而选用的这个单词，而是它就这么从天而降了呢。</span></p><p><strong><span>──据说本系列的主题是 「”季节的更迭””末日世界的未来”」。「季节的更迭」显得浪漫又有情趣，但「末日世界的未来」更令我在意。机会难得，可否请你谈谈设计这两个主题的缘由呢。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我一直都很喜欢暧昧的感觉，就好比「变化过程」的状态。像是梅雨啊、夏季与秋季之间的那一瞬间，我想用歌来表现这些感觉。我喜欢的并不是为不可名状之物命之以名，而是将概念本身制作成曲。我之前从未写过Message Song</span><font color=gray><span>（用歌词表达自己强烈主张的歌曲）</span></font><span>，但是这次我想试试将某种状态或者感情用音乐的形式加以表现。这次准备连续配信的三首歌，都会以不同的形式来展现「季节的更迭」。而关于「末日世界的未来」，就如我刚才所说，我过去的歌主题大部分都是与世界的终焉有关，之前读太宰治的『小说灯笼』时，有这么一段话令我印象深刻：「——真正的故事，总是始于恋爱舞会结束之后。大多数电影，在有情人终成眷属时就会落下帷幕，但其实我们更想知道的，是两人接下来会过上怎样的生活。」有两个主题我是不会去碰的，除了刚才说到的Message Song，再就是情歌，但这并不妨碍我对这段话深有感触。至今我写的都是世界迎来终焉的故事，那么，那之后又是什么样的呢？是彻底的结束，还是……？于是我就开始想写这样的歌了。当然这并不是只局限于这次配信的三首歌，更是关乎「未来」的主题呢。</span></p><h2><a name="很喜欢雨的味道petrichor这个单词从发音到写法都非常中意" class="md-header-anchor"></a><span>很喜欢雨的味道。「Petrichor」这个单词从发音到写法都非常中意</span></h2><p><img src="https://github.com/memo422/memo/raw/master/memo200708/image/002.jpg" referrerpolicy="no-referrer" alt="img"></p><p><strong><span>──「Petrichor」是配信歌曲系列的第一弹。含义是下雨时地面散发出的味道，确实非常有“味道”呢。我很想知道你最终会敲定这个单词的缘由，以及它诞生的契机与背景。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我也不太记得是因为什么才知道这个单词的了……最开始想到这首歌的雏形时，我就明白「啊，这首歌是在下雨呢」。一开始我是想表现更和风的世界观，所以不想用片假名的，结果一直想不到好的名字。而就在跟大家一起商讨的时候，我突然就想到了这个词，于是干脆就不再抵触片假名了。再之后就非常顺利地理清了全貌。我很喜欢的雨的味道。「Petrichor」这个单词从发音到写法我都非常中意。</span></p><p><strong><span>──正如『in bloom』系列「季节的更迭」这一主题，今后整个系列的歌曲都会以「季节」为舞台吗？为什么会从以「雨」为题材的季节开始呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：现在『in bloom』系列预计是有三首歌，都会以季节为舞台。我的歌里本来就有很多是描写雨和夜晚的，而这次因为6月正值我歌手出道三周年，本来是打算出一张全部以雨作为主题的新单曲碟。标题就直接是『雨的三部曲』。这其实也是向作家福永武彦老师的『夜的三部曲』致敬，总之当初其实是这么计划的。结果因为种种原因变得很难实现了，可是唯独「Petrichor」我无论如何都想在6月发行，于是就变成了现在这样连续配信的形式了。后面两首因为与雨无关，本来是不准备用在这里的，但若是关于季节更迭的主题就非常契合了。这么说来，我上一张单曲碟『DATE』的C/W『Reminiscence』，最开始的名字也是『雨』呢。</span></p><p><strong><span>──就算穿着雨衣撑着伞，「Petrichor」所带来的好心情也会让人忍不住在雨中跟着踩节奏呢。请壮马先生谈谈制作这首歌时都有哪些讲究吧。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我希望能够表现出雨滴飞溅的感觉，但又要留心不能让歌曲变得太过POP。萨克斯的叠句有稍稍偏离音调，因为我本来就想用音阶表现不了的音。简单来说就是像蓝调那样的，但在这里我也还是想表现出「暧昧」的感觉呢。所以，如果是用理性来听音乐的人，或许会觉得有违和感。但是我也希望等歌曲接近尾声时，这一小段旋律能让大家莫名上瘾，于是就做成这样了。另外在前奏和尾音加入吉他噪声真是太正确了。就是所谓的偏左声道的立体声录音。真的要感谢我的编曲</span><a href='https://twitter.com/Sinxix'><span>Saku老师</span></a><span>，我把一位名叫Arto Lindsay的No Wave吉他手的视频放给他看，然后跟他说「麻烦你像他这样不要弹旋律，而是用噪音来弹节奏」，就是这么强行（笑）。Saku老师，我总是给您提一些很麻烦的要求，真是非常不好意思，这次也多亏你帮我编曲了！至于歌本身，副歌的和声部分很像Elliott Smith，我很喜欢。每当收录时，大家都会聚在一起，一边用键盘和吉他弹着，一边聊着诸如「这样弹是不是更时尚更有都市感？」之类的对话，对歌曲的旋律进行微调，能让人感受到团队的氛围，非常开心。歌曲的第二段开始会有非常独特的展开，恕我冒昧，但我个人觉得「如疯狂绽放一般～/狂い咲くような〜」的部分很有井上阳水先生的风格。而后面那段似是而非的说唱部分，也达到了我满意的效果呢。</span></p><h2><a name="不知为什么与雨相关的事物总是会吸引着我" class="md-header-anchor"></a><span>不知为什么，与「雨」相关的事物总是会吸引着我。</span></h2><p><strong><span>──听着「Petrichor」，可以感受到日本淅淅沥沥的梅雨季节特有的浪漫。壮马先生您对「梅雨的季节」有着怎样的 印象呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我不太喜欢潮气，所以谈不上有多喜欢，但不知为什么，与「雨」相关的事物总是会吸引着我。无论是汉字的字形、还是雨声的节奏和味道，包括色彩也是。总给人一种隐秘的印象，而不是全部呈现。与人擦肩而过，却只能看到对方撑着伞的嘴角，不觉得这很令人心动吗？</span></p><p><strong><span>──「Petrichor」通过歌词让人仿佛看到了主人公在街上散步的样子，也为下雨的风景增添色彩。那么壮马先生在为「Petrichor」作词的时候，有哪些格外留意的部分，又是否有什么特别的意图呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：疯狂与沉迷吧……其实在听过歌的人里对歌词的看法也出现了很大的分歧，当然并没有所谓的正确答案，看到这些考察我只会觉得好极了，非常开心（笑）。而在我个人来看呢，这首歌绝对不只是轻快的POP。先声明，这只是我个人的见解哦，这首歌非常有『雨中欢唱』</span><sup class='md-footnote'><a href='#dfref-footnote-1' name='ref-footnote-1'>1</a></sup><span>的风格，但对我而言，其实更像『发条橘子』</span><sup class='md-footnote'><a href='#dfref-footnote-2' name='ref-footnote-2'>2</a></sup><span>。主人公本人或许感觉很好，但在旁人来看呢？小说写法里有一种技法是采用不可信的叙述者，其实就是这么回事。但无心之雨最重要的还是去感受自己想感受的。对自己的见解有自信与诚意，并为之负责，听得开心即可。所以对不同的看法我是喜闻乐见的。</span></p><p><strong><span>──下雨天本会尽量避免外出，但听了「Petrichor」后，我甚至会产生这时外出或许会发生戏剧般事件的预感。歌词中也有出现「再稍微绕个远路/もうすこし寄り道」，对壮马先生来说，一般什么时候会这么想呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：其实我一直都在绕远路呢。我特别喜欢散步，所以本来就很喜欢另辟蹊径。上学的时候就经常走不同的路回家。但是与『Petrichor』的主人公不同，遇到下雨天我就直奔回家了（笑）。不过呢，我们本来也不知道他是从哪里来的，又是准备去哪里的嘛。某种意义上来说，他并非常人。所以说实话，我会觉得「这个人看起来很开心，但是总觉得有些吓人」。啊，扯远了，我喜欢选没走过的路走，这样一路都是没见过的风景，非常刺激，我很喜欢。</span></p><p><strong><span>────在「Petrichor」中，我感受到了一种充满情调的「季节的更迭」。那么它是否还蕴藏了其他的想法，是关于另一个主题「末日世界的未来」呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：关于这方面，去作过多的说明或许就有些太不识趣了……但是嘛，应该没有吧。我觉得这首歌是非常自省、充满主观意识的歌。在梅雨季节，人的情绪一般也会像季节更迭一样发生变化，但是对这个人来说，那只是一刹那的事，所以他大概会觉得“现在这么做最开心！”吧。歌虽然是我写的，我不能说太夸张的假话，但也不好事无巨细地一一说明……那么半真半假还是可以的吧，各位只要把我说的话当做见解之一，看过即可。只不过，「世界」这个词真的很难，不好判断它是指广义的全世界，还是狭义的个人世界。如果不同的见解可以像雨滴那么多，不是也很好吗。</span></p><p><strong><span>──这次参与收录的成员有Bass：越智俊介（CRCK/LCKS）, Sax：藤⽥淳之介（TRI4TH）, Piano：渡辺シュンスケ（Schroeder-Headz）等人。你是有追求BAND SOUND的想法吗?</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：并没有呢。相反，我还想尽可能地减少音节数。日本的流行音乐总是会用提高音压的手法来填补歌曲的间隙。用的是一种加法。而我则希望用减法，来让歌曲的留白听得更清楚。这是首有爵士乐风格的曲子，所以我希望能找一些重视groove韵律感，又会做减法的人，就是现在的成员了。大家的演奏真是太棒了，我非常喜欢。尤其是尾音部分的演奏，堪称完美，希望大家可以用心倾听。</span></p><h2><a name="慢镜头下的雨真的很美呢" class="md-header-anchor"></a><span>慢镜头下的雨真的很美呢。</span></h2><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/p7LEJgj3bR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><p><strong><span>──「Petrichor」的MV就像水彩画一样，非常漂亮。请谈谈影像方面的意图与执着吧。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：季节性MV的拍摄相当困难，在研究了各种可能的手段后，就变成了现在的样子。我由衷感谢影像团队在时间有限的情况下，能够制作出如此优秀的成品。一开始，在我表达了大致的希望后，影像团队就提出了使用水彩风的建议，我立刻拍案叫好。配上歌曲后真的就如时尚电影一样呢。造型师和化妆师也都是与我一直有合作的人，这次自然也是非常出色地完成了任务。再次深刻地体会到了有整个团队与我共同创作的幸福感呢。</span></p><p><strong><span>──拍摄中有发生什么趣事吗？另外，也请谈谈「Petrichor」MV的看点吧。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：拍摄当天，天一直都是阴沉沉的，而拍摄刚一结束，就直接哗啦啦地下起雨来了。这给我留下了很深刻的印象。影像团队的成品非常出色，所以也希望大家能够多看个几遍。慢镜头下的雨真的很美呢。说句题外话，有一段我一边走一边打响指的镜头，其实没有一个是打响了的哦（笑）。</span></p><p><strong><span>──「Petrichor」的成品，对现在的壮马先生来说，具有怎样的意义呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我觉得歌曲一旦发行，就已不再是属于自己的了，而是属于世界的。对我来说，这次能够表现出POP背后若隐若现的疯狂就已经非常满足了。但是音乐终归是需要听众的。如果能有更多的人，愿意听上更多次，就已经是至高无上的幸福了。如果要再多说一句，那就是我很高兴能做出这么一首适合拉开新系列序幕的“有内涵”歌曲。</span></p><p><strong><span>──我也很在意这个系列会变成配信歌曲的理由。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：正如前面写的，我本来是打算发行成单曲碟的。现在正是CD与配信并存的时代，两者各有各的好处。但我这个年纪的人，体会过在当地二手唱片店冲着封面买了CD，拿回家播放时的跃跃欲试感，也经历过听完CD后发现还有隐藏轨时的惊喜，所以今后的还是会以CD的形式发行。</span></p><p><strong><span>──我也很在意今后会如何塑造这个「in bloom」系列。请说说看吧，现阶段可以透露的那些就好。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：第二首歌将在8月19日配信，歌名是『Summerholic!』。是盛夏时节积极向上的乐队风。我认为，这是一首相当简单的，或者说只有一次变化的朴素歌曲。但是歌曲里又到处暗藏了机关，相信会是一首听起来很有意思的歌哦。与「Petrichor」一样，这首歌根据不同的见解，或许也会有人觉得恐怖。不过，毕竟是夏天嘛（笑）。第三首歌则是夏秋之间的歌。特点是动情的BAND SOUND与感伤的歌词吧。这首歌的主题就带有末日世界了。但是跟我过去的歌曲在视角上还是有些许不同的。刚好前些天已经录完了，非常期待成品呢。总之我已经写好无数存货了……就好比以前在Twitter上发过一小段『北欧（暂定）』这首歌的demo，还有很多其他的素材。用暂定名来列举的话，就有『绿洲』、『bossa nova』『VW』『玛丽莲曼森』『鲸』等等……为了让这些歌曲有朝一日能见光，我也会努力的。</span></p><p><strong><span>──你希望大家是在怎样的情况下听到「Petrichor」?</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我认为当今时代的一大优点，就是在任何情况下都能自由地听音乐。所以，我希望大家可以想怎么听就怎么听。我个人呢，是比较推荐散步的时候听，在晚上边听边学MV，会非常快乐哦。当然也不排除会被旁人另眼相看（笑）。虽然作曲的时候并没有设想是一天中的哪一个时间段，但意外的是，就连早上听也很合适呢。就比如早上起床后，来到阳台，望着外面淅淅沥沥下的雨时。</span></p><h2><a name="书与睡眠都是我的灵感源泉" class="md-header-anchor"></a><span>书与睡眠，都是我的灵感源泉。</span></h2><p><strong><span>──壮马先生喜欢什么样的时尚风格呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我喜欢比较简单的。法式、偏流行的样式也不错。本来以前我不怎么喜欢戴戒指和手表，但喜好真的是会逐渐改变呢。尤其是手表，我追求的不是价格和性能，而是戴起来最舒服的那一块，可惜现在依然还在寻觅当中。颜色的话呢，我是绿色和黑色系的比较多。我经常会饰演蓝色系的角色，所以在服装上穿冷色系的时候更多，但其实我自己更喜欢深色的波尔多红、秋色系的衣服。另外我也喜欢淡色系这样暧昧的色调。也很爱穿针织衫和开衫。</span></p><p><strong><span>──那么对时尚方面有什么讲究呢？有喜欢的牌子吗？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：讲究就是要穿起来舒适吧。经常会有诸如录音或是需要长时间说话的情况，我大多会选择不会束缚身体的宽松衣服。喜欢的牌子虽然有不少，但对于时尚我是想悄然享受的类型，所以保密（笑）。就算有人知道我喜欢什么牌子，也请不要声张哦。非要说一个的话，我经常穿Dr.Martens的鞋子。有好几双，穿着跟脚，也很好走。同理，我也很喜欢Paraboot的鞋子。最近的烦恼是不适合无檐帽，因为我是圆脸（笑）。我喜欢质量好、用得久的东西。</span></p><p><strong><span>──壮马先生的生活中，最不可或缺的是什么呢？请告诉我。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：是书和睡眠。它们都是我的灵感源泉。顺带一提，「生活」将是『in bloom』系列之后的一个非常重要的关键词。当然，目前还只是在构想阶段，不知道最后会变成什么样……。纵使世界末日了，生活也还是要继续的（吧？）。总之希望大家可以默默记住这一点，以后总有可以拿出来对答案的一天。另外最近买到的好东西是Le Creuset的食器。拿来盛什么菜都特别好看，收拾起来也轻松。用平底锅炒好，直接装盘，吃完后洗干净擦干放回即可。随着自己做饭的频率增加，我现在已经全都在用它了（笑）。另外我还买了做碳酸水的机器，这个也非常好用。明明我以前都喝不了碳酸的，真是不可思议啊。哦还有，我还想买一把bizarre吉他，就是形状长得很奇怪的那种。声音要越尖越好……哎呀，越说越停不下来了呢（笑）。</span></p><p><strong><span>──最后，请再随便说点什么吧。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：谢谢大家可以读到最后！能多听上几遍『Petrichor』我就非常开心了！今年我预计还推出很多新歌，希望大家除了声优方面的工作，也可以支持一下我在音乐方面的活动！</span></p><p><strong><span>──期待你的新作。也希望下次还能有机会再与你深谈。感谢你和我聊了这么久。</span></strong></p><p><em><span>TEXT:长泽智典(仅提问)</span></em></p><hr /><h3><a name="information" class="md-header-anchor"></a><span>Information</span></h3><p><img src="https://raw.githubusercontent.com/memo422/memo/master/memo200708/image/003.jpg" referrerpolicy="no-referrer" alt="img"></p><p><span>「Petrichor」（作词・作曲：齐藤壮马　编曲：Saku）</span>
+<span>他对这次的新系列究竟有着怎样的想法，以及系列第一弹的「Petrichor」里究竟蕴含着怎样的感情，我们以邮件访谈的形式请他进行了作答。</span></p><h3><a name="对文字的视觉效果也很在意" class="md-header-anchor"></a><span>对文字的视觉效果也很在意</span></h3><p><strong><span>──你的歌手活动也如翻页一样，以『in bloom』系列正式迈入了第二章。但是我很在意你想划分「第一章」「第二章」的理由。是为了明确表现的对象，才会特意进行区分的吗？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：其实并没有那么夸张。接到唱片公司的邀请已经过去两年多了，专辑也出了，演唱会也搞了，所以感觉差不多已经走完了一套流程了。回首过去，从大石昌良先生为我写下最好的『Fish Story』，到专辑『quantum stranger』制作完成，它们已经完美地衔接在了一起。歌的主题，也就是唱的内容，大部分也都是「旅程」啊「世界的终焉」啊类似这种方向性的。只是，过去我一直认为，既然是作为声优开展歌手活动，那么最重要的还是应该提供流行性的娱乐，但是渐渐地，我开始有了野心，还想尝试一些更加黑暗，更加难以理解的音乐，所以，这个第二章其实就是“我接下来要做形形色色各种各样的音乐啦，还请多多支持”的意思。结果现在感觉有点小题大做了，怪不好意思的……（笑）。</span></p><p><strong><span>──我也很在意你这次的新系列为什么会采用『in bloom』(盛开)这个词，请说一下理由吧。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我自己是觉得没必要特意单独起一个系列名的，但是制作人说还是起一个比较好，因为这样可以让人知道这些歌曲之间是有联系的（笑）。本来按照计划，我是准备在6月推出新单曲碟的。由于种种原因，才改成了配信的形式。而我在整理已经写好的歌时，发现有很多都是带有季节感的。『in bloom』我本来是打算拿来当歌名用的，但是感觉它跟整个系列都很契合，就直接决定用作系列名了。我其实是对文字的视觉效果也很在意的类型，而『in bloom』无论是发音还是视觉效果都很好。所以，并不是因为一开始就构筑了完整的概念而选用的这个单词，而是它就这么从天而降了呢。</span></p><p><strong><span>──据说本系列的主题是 「”季节的更迭””末日世界的未来”」。「季节的更迭」显得浪漫又有情趣，但「末日世界的未来」更令我在意。机会难得，可否请你谈谈设计这两个主题的缘由呢。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我一直都很喜欢暧昧的感觉，就好比「变化过程」的状态。像是梅雨啊、夏季与秋季之间的那一瞬间，我想用歌来表现这些感觉。我喜欢的并不是为不可名状之物命之以名，而是将概念本身制作成曲。我之前从未写过Message Song</span><font color=gray><span>（用歌词表达自己强烈主张的歌曲）</span></font><span>，但是这次我想试试将某种状态或者感情用音乐的形式加以表现。这次准备连续配信的三首歌，都会以不同的形式来展现「季节的更迭」。而关于「末日世界的未来」，就如我刚才所说，我过去的歌主题大部分都是与世界的终焉有关，之前读太宰治的『小说灯笼』时，有这么一段话令我印象深刻：「——真正的故事，总是始于恋爱舞会结束之后。大多数电影，在有情人终成眷属时就会落下帷幕，但其实我们更想知道的，是两人接下来会过上怎样的生活。」有两个主题我是不会去碰的，除了刚才说到的Message Song，再就是情歌，但这并不妨碍我对这段话深有感触。至今我写的都是世界迎来终焉的故事，那么，那之后又是什么样的呢？是彻底的结束，还是……？于是我就开始想写这样的歌了。当然这并不是只局限于这次配信的三首歌，更是关乎「未来」的主题呢。</span></p><h3><a name="很喜欢雨的味道petrichor这个单词从发音到写法都非常中意" class="md-header-anchor"></a><span>很喜欢雨的味道。「Petrichor」这个单词从发音到写法都非常中意</span></h3><p><img src="https://github.com/memo422/memo/raw/master/memo200708/image/002.jpg" referrerpolicy="no-referrer" alt="img"></p><p><strong><span>──「Petrichor」是配信歌曲系列的第一弹。含义是下雨时地面散发出的味道，确实非常有“味道”呢。我很想知道你最终会敲定这个单词的缘由，以及它诞生的契机与背景。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我也不太记得是因为什么才知道这个单词的了……最开始想到这首歌的雏形时，我就明白「啊，这首歌是在下雨呢」。一开始我是想表现更和风的世界观，所以不想用片假名的，结果一直想不到好的名字。而就在跟大家一起商讨的时候，我突然就想到了这个词，于是干脆就不再抵触片假名了。再之后就非常顺利地理清了全貌。我很喜欢的雨的味道。「Petrichor」这个单词从发音到写法我都非常中意。</span></p><p><strong><span>──正如『in bloom』系列「季节的更迭」这一主题，今后整个系列的歌曲都会以「季节」为舞台吗？为什么会从以「雨」为题材的季节开始呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：现在『in bloom』系列预计是有三首歌，都会以季节为舞台。我的歌里本来就有很多是描写雨和夜晚的，而这次因为6月正值我歌手出道三周年，本来是打算出一张全部以雨作为主题的新单曲碟。标题就直接是『雨的三部曲』。这其实也是向作家福永武彦老师的『夜的三部曲』致敬，总之当初其实是这么计划的。结果因为种种原因变得很难实现了，可是唯独「Petrichor」我无论如何都想在6月发行，于是就变成了现在这样连续配信的形式了。后面两首因为与雨无关，本来是不准备用在这里的，但若是关于季节更迭的主题就非常契合了。这么说来，我上一张单曲碟『DATE』的C/W『Reminiscence』，最开始的名字也是『雨』呢。</span></p><p><strong><span>──就算穿着雨衣撑着伞，「Petrichor」所带来的好心情也会让人忍不住在雨中跟着踩节奏呢。请壮马先生谈谈制作这首歌时都有哪些讲究吧。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我希望能够表现出雨滴飞溅的感觉，但又要留心不能让歌曲变得太过POP。萨克斯的叠句有稍稍偏离音调，因为我本来就想用音阶表现不了的音。简单来说就是像蓝调那样的，但在这里我也还是想表现出「暧昧」的感觉呢。所以，如果是用理性来听音乐的人，或许会觉得有违和感。但是我也希望等歌曲接近尾声时，这一小段旋律能让大家莫名上瘾，于是就做成这样了。另外在前奏和尾音加入吉他噪声真是太正确了。就是混响在偏左声道上的那个。真的要感谢我的编曲</span><a href='https://twitter.com/Sinxix'><span>Saku老师</span></a><span>，我把一位名叫Arto Lindsay的No Wave吉他手的视频放给他看，然后跟他说「麻烦你像他这样不要弹旋律，而是用噪音来弹节奏」，就是这么强行（笑）。Saku老师，我总是给您提一些很麻烦的要求，真是非常不好意思，这次也多亏你帮我编曲了！至于歌本身，副歌的和声部分很像Elliott Smith，我很喜欢。每当收录时，大家都会聚在一起，一边用键盘和吉他弹着，一边聊着诸如「这样弹是不是更时尚更有都市感？」之类的对话，对歌曲的旋律进行微调，能让人感受到团队的氛围，非常开心。歌曲的第二段开始会有非常独特的展开，恕我冒昧，但我个人觉得「如疯狂绽放一般～/狂い咲くような〜」的部分很有井上阳水先生的风格。而后面那段似是而非的说唱部分，也达到了我满意的效果呢。</span></p><h3><a name="不知为什么与雨相关的事物总是会吸引着我" class="md-header-anchor"></a><span>不知为什么，与「雨」相关的事物总是会吸引着我。</span></h3><p><strong><span>──听着「Petrichor」，可以感受到日本淅淅沥沥的梅雨季节特有的浪漫。壮马先生您对「梅雨的季节」有着怎样的 印象呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我不太喜欢潮气，所以谈不上有多喜欢，但不知为什么，与「雨」相关的事物总是会吸引着我。无论是汉字的字形、还是雨声的节奏和味道，包括色彩也是。总给人一种隐秘的印象，而不是全部呈现。与人擦肩而过，却只能看到对方撑着伞的嘴角，不觉得这很令人心动吗？</span></p><p><strong><span>──「Petrichor」通过歌词让人仿佛看到了主人公在街上散步的样子，也为下雨的风景增添色彩。那么壮马先生在为「Petrichor」作词的时候，有哪些格外留意的部分，又是否有什么特别的意图呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：疯狂与沉迷吧……其实在听过歌的人里对歌词的看法也出现了很大的分歧，当然并没有所谓的正确答案，看到这些考察我只会觉得好极了，非常开心（笑）。而在我个人来看呢，这首歌绝对不只是轻快的POP。先声明，这只是我个人的见解哦，这首歌非常有『雨中欢唱』</span><sup class='md-footnote'><a href='#dfref-footnote-1' name='ref-footnote-1'>1</a></sup><span>的风格，但对我而言，其实更像『发条橘子』</span><sup class='md-footnote'><a href='#dfref-footnote-2' name='ref-footnote-2'>2</a></sup><span>。主人公本人或许感觉很好，但在旁人来看呢？小说写法里有一种技法是采用不可信的叙述者，其实就是这么回事。但无心之雨最重要的还是去感受自己想感受的。对自己的见解有自信与诚意，并为之负责，听得开心即可。所以对不同的看法我是喜闻乐见的。</span></p><p><strong><span>──下雨天本会尽量避免外出，但听了「Petrichor」后，我甚至会产生这时外出或许会发生戏剧般事件的预感。歌词中也有出现「再稍微绕个远路/もうすこし寄り道」，对壮马先生来说，一般什么时候会这么想呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：其实我一直都在绕远路呢。我特别喜欢散步，所以本来就很喜欢另辟蹊径。上学的时候就经常走不同的路回家。但是与『Petrichor』的主人公不同，遇到下雨天我就直奔回家了（笑）。不过呢，我们本来也不知道他是从哪里来的，又是准备去哪里的嘛。某种意义上来说，他并非常人。所以说实话，我会觉得「这个人看起来很开心，但是总觉得有些吓人」。啊，扯远了，我喜欢选没走过的路走，这样一路都是没见过的风景，非常刺激，我很喜欢。</span></p><p><strong><span>────在「Petrichor」中，我感受到了一种充满情调的「季节的更迭」。那么它是否还蕴藏了其他的想法，是关于另一个主题「末日世界的未来」呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：关于这方面，去作过多的说明或许就有些太不识趣了……但是嘛，应该没有吧。我觉得这首歌是非常自省、充满主观意识的歌。在梅雨季节，人的情绪一般也会像季节更迭一样发生变化，但是对这个人来说，那只是一刹那的事，所以他大概会觉得“现在这么做最开心！”吧。歌虽然是我写的，我不能说太夸张的假话，但也不好事无巨细地一一说明……那么半真半假还是可以的吧，各位只要把我说的话当做见解之一，看过即可。只不过，「世界」这个词真的很难，不好判断它是指广义的全世界，还是狭义的个人世界。如果不同的见解可以像雨滴那么多，不是也很好吗。</span></p><p><strong><span>──这次参与收录的成员有Bass：越智俊介（CRCK/LCKS）, Sax：藤⽥淳之介（TRI4TH）, Piano：渡辺シュンスケ（Schroeder-Headz）等人。你是有追求BAND SOUND的想法吗?</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：并没有呢。相反，我还想尽可能地减少音节数。日本的流行音乐总是会用提高音压的手法来填补歌曲的间隙。用的是一种加法。而我则希望用减法，来让歌曲的留白听得更清楚。这是首有爵士乐风格的曲子，所以我希望能找一些重视groove韵律感，又会做减法的人，就是现在的成员了。大家的演奏真是太棒了，我非常喜欢。尤其是尾音部分的演奏，堪称完美，希望大家可以用心倾听。</span></p><h3><a name="慢镜头下的雨真的很美呢" class="md-header-anchor"></a><span>慢镜头下的雨真的很美呢。</span></h3><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/p7LEJgj3bR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><p><strong><span>──「Petrichor」的MV就像水彩画一样，非常漂亮。请谈谈影像方面的意图与执着吧。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：季节性MV的拍摄相当困难，在研究了各种可能的手段后，就变成了现在的样子。我由衷感谢影像团队在时间有限的情况下，能够制作出如此优秀的成品。一开始，在我表达了大致的希望后，影像团队就提出了使用水彩风的建议，我立刻拍案叫好。配上歌曲后真的就如时尚电影一样呢。造型师和化妆师也都是与我一直有合作的人，这次自然也是非常出色地完成了任务。再次深刻地体会到了有整个团队与我共同创作的幸福感呢。</span></p><p><strong><span>──拍摄中有发生什么趣事吗？另外，也请谈谈「Petrichor」MV的看点吧。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：拍摄当天，天一直都是阴沉沉的，而拍摄刚一结束，就直接哗啦啦地下起雨来了。这给我留下了很深刻的印象。影像团队的成品非常出色，所以也希望大家能够多看个几遍。慢镜头下的雨真的很美呢。说句题外话，有一段我一边走一边打响指的镜头，其实没有一个是打响了的哦（笑）。</span></p><p><strong><span>──「Petrichor」的成品，对现在的壮马先生来说，具有怎样的意义呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我觉得歌曲一旦发行，就已不再是属于自己的了，而是属于世界的。对我来说，这次能够表现出POP背后若隐若现的疯狂就已经非常满足了。但是音乐终归是需要听众的。如果能有更多的人，愿意听上更多次，就已经是至高无上的幸福了。如果要再多说一句，那就是我很高兴能做出这么一首适合拉开新系列序幕的“有内涵”歌曲。</span></p><p><strong><span>──我也很在意这个系列会变成配信歌曲的理由。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：正如前面写的，我本来是打算发行成单曲碟的。现在正是CD与配信并存的时代，两者各有各的好处。但我这个年纪的人，体会过在当地二手唱片店冲着封面买了CD，拿回家播放时的跃跃欲试感，也经历过听完CD后发现还有隐藏轨时的惊喜，所以今后的还是会以CD的形式发行。</span></p><p><strong><span>──我也很在意今后会如何塑造这个「in bloom」系列。请说说看吧，现阶段可以透露的那些就好。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：第二首歌将在8月19日配信，歌名是『Summerholic!』。是盛夏时节积极向上的乐队风。我认为，这是一首相当简单的，或者说只有一次变化的朴素歌曲。但是歌曲里又到处暗藏了机关，相信会是一首听起来很有意思的歌哦。与「Petrichor」一样，这首歌根据不同的见解，或许也会有人觉得恐怖。不过，毕竟是夏天嘛（笑）。第三首歌则是夏秋之间的歌。特点是动情的BAND SOUND与感伤的歌词吧。这首歌的主题就带有末日世界了。但是跟我过去的歌曲在视角上还是有些许不同的。刚好前些天已经录完了，非常期待成品呢。总之我已经写好无数存货了……就好比以前在Twitter上发过一小段『北欧（暂定）』这首歌的demo，还有很多其他的素材。用暂定名来列举的话，就有『绿洲小姐』、『bossa nova』『VW』『玛丽莲曼森』『鲸』等等……为了让这些歌曲有朝一日能见光，我也会努力的。</span></p><p><strong><span>──你希望大家是在怎样的情况下听到「Petrichor」?</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我认为当今时代的一大优点，就是在任何情况下都能自由地听音乐。所以，我希望大家可以想怎么听就怎么听。我个人呢，是比较推荐散步的时候听，在晚上边听边学MV，会非常快乐哦。当然也不排除会被旁人另眼相看（笑）。虽然作曲的时候并没有设想是一天中的哪一个时间段，但意外的是，就连早上听也很合适呢。就比如早上起床后，来到阳台，望着外面淅淅沥沥下的雨时。</span></p><h3><a name="书与睡眠都是我的灵感源泉" class="md-header-anchor"></a><span>书与睡眠，都是我的灵感源泉。</span></h3><p><strong><span>──壮马先生喜欢什么样的时尚风格呢？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：我喜欢比较简单的。法式、偏流行的样式也不错。本来以前我不怎么喜欢戴戒指和手表，但喜好真的是会逐渐改变呢。尤其是手表，我追求的不是价格和性能，而是戴起来最舒服的那一块，可惜现在依然还在寻觅当中。颜色的话呢，我是绿色和黑色系的比较多。我经常会饰演蓝色系的角色，所以在服装上穿冷色系的时候更多，但其实我自己更喜欢深色的波尔多红、秋色系的衣服。另外我也喜欢淡色系这样暧昧的色调。也很爱穿针织衫和开衫。</span></p><p><strong><span>──那么对时尚方面有什么讲究呢？有喜欢的牌子吗？</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：讲究就是要穿起来舒适吧。经常会有诸如录音或是需要长时间说话的情况，我大多会选择不会束缚身体的宽松衣服。喜欢的牌子虽然有不少，但对于时尚我是想悄然享受的类型，所以保密（笑）。就算有人知道我喜欢什么牌子，也请不要声张哦。非要说一个的话，我经常穿Dr.Martens的鞋子。有好几双，穿着跟脚，也很好走。同理，我也很喜欢Paraboot的鞋子。最近的烦恼是不适合无檐帽，因为我是圆脸（笑）。我喜欢质量好、用得久的东西。</span></p><p><strong><span>──壮马先生的生活中，最不可或缺的是什么呢？请告诉我。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：是书和睡眠。它们都是我的灵感源泉。顺带一提，「生活」将是『in bloom』系列之后的一个非常重要的关键词。当然，目前还只是在构想阶段，不知道最后会变成什么样……。纵使世界末日了，生活也还是要继续的（吧？）。总之希望大家可以默默记住这一点，以后总有可以拿出来对答案的一天。另外最近买到的好东西是Le Creuset的食器。拿来盛什么菜都特别好看，收拾起来也轻松。用平底锅炒好，直接装盘，吃完后洗干净擦干放回即可。随着自己做饭的频率增加，我现在已经全都在用它了（笑）。另外我还买了做碳酸水的机器，这个也非常好用。明明我以前都喝不了碳酸的，真是不可思议啊。哦还有，我还想买一把bizarre吉他，就是形状长得很奇怪的那种。声音要越尖越好……哎呀，越说越停不下来了呢（笑）。</span></p><p><strong><span>──最后，请再随便说点什么吧。</span></strong></p><p><strong><font color=#78ad94><span>斉藤壮馬</span></font></strong><span>：谢谢大家可以读到最后！能多听上几遍『Petrichor』我就非常开心了！今年我预计还推出很多新歌，希望大家除了声优方面的工作，也可以支持一下我在音乐方面的活动！</span></p><p><strong><span>──期待你的新作。也希望下次还能有机会再与你深谈。感谢你和我聊了这么久。</span></strong></p><p><em><span>TEXT:长泽智典(仅提问)</span></em></p><hr /><h4><a name="information" class="md-header-anchor"></a><span>Information</span></h4><p><img src="https://raw.githubusercontent.com/memo422/memo/master/memo200708/image/003.jpg" referrerpolicy="no-referrer" alt="img"></p><p><span>「Petrichor」（作词・作曲：齐藤壮马　编曲：Saku）</span>
 <span>配信⽇：2020.6.27(Sat)</span>
 <span>价格：255円（含税）（不同配信网站价格略有不同）</span>
 <span>各配信网站指引：</span>
@@ -472,7 +551,7 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 <span>Sax：藤⽥淳之介（TRI4TH）</span>
 <span>Piano：渡辺シュンスケ（Schroeder-Headz）</span></p><p><span>以“季节的更迭”、“末日世界的未来”为主题，于今夏连续配信的『in bloom』系列第二弹</span>
 <span>「Summerholic!」已确定将于8月19日（三）0点上架。</span>
-<span>敬请期待『in bloom』系列「Summerholic!」的后续新情报！</span></p><h3><a name="profile" class="md-header-anchor"></a><span>Profile</span></h3><p><img src="https://raw.githubusercontent.com/memo422/memo/master/memo200708/image/004.jpg" referrerpolicy="no-referrer" alt="img"></p><p><span>[姓名] 齐藤壮马（Saito Soma）</span>
+<span>敬请期待『in bloom』系列「Summerholic!」的后续新情报！</span></p><h4><a name="profile" class="md-header-anchor"></a><span>Profile</span></h4><p><img src="https://raw.githubusercontent.com/memo422/memo/master/memo200708/image/004.jpg" referrerpolicy="no-referrer" alt="img"></p><p><span>[姓名] 齐藤壮马（Saito Soma）</span>
 <span>[生日] 4.22</span>
 <span>[出身地] 山梨县</span>
 <span>[官方网站]</span>
@@ -485,7 +564,7 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 <span>以富有洞察力的解释和丰富多彩的表现形式来演绎不同的角色，高超的表现能力是他的魅力所在。</span>
 <span>动画・游戏等作品的角色歌中，能保持角色声线的歌唱能力为他收获了不少好评。2017年６月自SACRA MUSIC出道成为歌手。并开始了正式的音乐活动。</span>
 <span>出道单曲「Fish Story」在Oricon周榜首次登场中排名第9，而收录了TV动画『活击刀剑乱舞』OP「断光雨」的二单「夜未明／断光雨」同样在Oricon周榜首次登场中排名第7！</span>
-<span>在出演了许多动画・游戏作品的同时，也拥有在私人生活中听过各种各样的音乐的略带狂热的志向，敬请期待同样也是读书家的他所创造出的世界观！</span></p><p><span>[主要的出演作品]</span>
+<span>在出演了许多动画・游戏作品的同时，私人生活中也偏爱各种略带狂热志向的音乐，敬请期待同样也是读书家的他所创造出的世界观！</span></p><p><span>[主要的出演作品]</span>
 <span>■ANIME</span>
 <span>「ヒプノシスマイク-Division Rap Battle-」（夢野幻太郎）</span>
 <span>「うちタマ?! ～うちのタマ知りませんか?～」（岡本タマ）</span>
